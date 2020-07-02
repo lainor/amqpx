@@ -48,12 +48,12 @@ defmodule Amqpx.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:amqp_client, "~> 3.7.20"},
-      {:rabbit_common, "~> 3.7.20"},
+      {:amqp_client, "~> 3.8"},
+      {:rabbit_common, "~> 3.8"},
       {:elixir_uuid, "~> 1.1"},
       {:credo, "~> 1.1", only: [:dev, :test]},
       {:mock, "~> 0.3.0", only: :test},
-      {:dialyxir, "~> 1.0.0-rc", only: [:dev, :test], runtime: false},
+      {:dialyxir, "~> 1.0", only: [:dev, :test], runtime: false},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
